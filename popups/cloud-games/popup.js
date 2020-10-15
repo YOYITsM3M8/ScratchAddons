@@ -22,9 +22,9 @@ const vue = new Vue({
       projectObject.amt = usersSet.size;
       projectObject.users = Array.from(usersSet);
     },
-    select: function(id) {
-      window.open = "https://scratch.mit.edu/projects/"+id;
-    }
+    select: function (id) {
+      window.open = "https://scratch.mit.edu/projects/" + id;
+    },
   },
   async created() {
     const res = await fetch("https://api.scratch.mit.edu/studios/539952/projects/?limit=40");
