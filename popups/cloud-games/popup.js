@@ -21,8 +21,8 @@ const vue = new Vue({
       }
       projectObject.amt = usersSet.size;
       projectObject.users = Array.from(usersSet);
-    },
-    select: function (id) {
+    }, 
+    link: function (id) {
       window.open = "https://scratch.mit.edu/projects/" + id;
     },
   },
