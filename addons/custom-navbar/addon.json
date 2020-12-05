@@ -1,0 +1,46 @@
+{
+  "name": "Custom Navbar",
+  "description": "Create your own custom navbar!",
+  "credits": [
+    {
+      "name": "retronbv/YOYITsM3M8",
+      "link": "https://github.com/YOYITsM3M8"
+    }
+  ],
+  "userscripts": [
+    {
+      "url": "background.js",
+      "matches": ["https://scratch.mit.edu/*"],
+      "runAtComplete": true
+    }
+  ],
+  "settings": [
+    {
+      "name": "Text On Ideas Button",
+      "id": "ideasTxt",
+      "type": "string",
+      "default": "Ideas"
+    },
+    {
+      "name": "Url for Ideas Button",
+      "id": "ideasUrl",
+      "type": "string",
+      "default": "https://scratch.mit.edu/ideas"
+    },
+    {
+      "name": "Text On About Button",
+      "id": "aboutTxt",
+      "type": "string",
+      "default": "About"
+    },
+    {
+      "name": "Url for About Button",
+      "id": "aboutUrl",
+      "type": "string",
+      "default": "https://scratch.mit.edu/about"
+    }
+  ],
+  "tags": ["community", "recommended"],
+  "enabledByDefault": true,
+  "notice": "If one of your urls is a \"javascript:\" url the addon will not run for your safety"
+}
